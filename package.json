@@ -44,7 +44,7 @@
     "semantic-release": "^19.0.5"
   },
   "release": {
-    "branches": ["master","next"]
+    "branches": ["main","next"]
   },
   "publishConfig": {
     "access": "public"
