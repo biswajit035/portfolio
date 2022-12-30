@@ -1,0 +1,37 @@
+@import './components/button';
+@import './abstracts/variable';
+@import './abstracts/mixin';
+
+.navbar {
+    min-height: 64px;
+    font-size: 30px;
+    font-weight: 600;
+    display: flex;
+    justify-content: flex-end;
+    gap: 100px;
+    align-items: center;
+    padding: 10px 100px;
+
+    &-btn {
+        @extend button;
+    }
+
+    &-link {
+        cursor: pointer;
+
+        &:hover {
+            color: $primary-color;
+        }
+
+        @include mobile{
+            display: none;
+        }
+    }
+
+    @include mobile {
+        font-size: 16px;
+        min-height: 24px;
+        gap: 10px;
+        padding: 10px 10px;
+    }
+}

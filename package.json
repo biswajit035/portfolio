@@ -16,8 +16,7 @@
     "build": "react-scripts build",
     "test": "react-scripts test",
     "eject": "react-scripts eject",
-    "semantic-release": "semantic-release",
-    "prepare": "husky install"
+    "semantic-release": "semantic-release"
   },
   "eslintConfig": {
     "extends": [
@@ -42,8 +41,7 @@
     "url": "https://github.com/biswajit035/portfolio.git"
   },
   "devDependencies": {
-    "semantic-release": "^19.0.5",
-    "husky": "^8.0.0"
+    "semantic-release": "^19.0.5"
   },
   "release": {
     "branches": [

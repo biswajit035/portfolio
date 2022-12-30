@@ -1,0 +1,23 @@
+@import '../abstracts/variable';
+@import '../abstracts//mixin';
+
+button{
+    display: inline;
+    border: 2px solid black;
+    width: auto;
+    padding: 30px;
+    border-radius: 100px;
+    font-size: 30px;
+    font-weight: 600;
+    cursor: pointer;
+    box-sizing: border-box;
+    &:hover{
+        border: 2px solid $primary-color;
+    }
+
+    @include mobile{
+        padding: 15px;
+        font-size: 16px;
+        font-weight: 600;
+    }
+}

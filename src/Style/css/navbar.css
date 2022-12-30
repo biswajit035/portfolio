@@ -1,0 +1,55 @@
+@import url("https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Old+Standard+TT&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Old+Standard+TT&display=swap");
+button, .navbar-btn {
+  display: inline;
+  border: 2px solid black;
+  width: auto;
+  padding: 30px;
+  border-radius: 100px;
+  font-size: 30px;
+  font-weight: 600;
+  cursor: pointer;
+  box-sizing: border-box;
+}
+button:hover, .navbar-btn:hover {
+  border: 2px solid #E94D35;
+}
+@media (width <= 480px) {
+  button, .navbar-btn {
+    padding: 15px;
+    font-size: 16px;
+    font-weight: 600;
+  }
+}
+
+.navbar {
+  min-height: 64px;
+  font-size: 30px;
+  font-weight: 600;
+  display: flex;
+  justify-content: flex-end;
+  gap: 100px;
+  align-items: center;
+  padding: 10px 100px;
+}
+.navbar-link {
+  cursor: pointer;
+}
+.navbar-link:hover {
+  color: #E94D35;
+}
+@media (width <= 480px) {
+  .navbar-link {
+    display: none;
+  }
+}
+@media (width <= 480px) {
+  .navbar {
+    font-size: 16px;
+    min-height: 24px;
+    gap: 10px;
+    padding: 10px 10px;
+  }
+}/*# sourceMappingURL=navbar.css.map */

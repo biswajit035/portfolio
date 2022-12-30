@@ -1,0 +1,19 @@
+@import '../abstracts/mixin';
+
+heading {
+    font-size: 120px;
+    font-family: 'Bebas Neue', cursive;
+    line-height: 110px;
+    @include mobile {
+            font-size: 45px;
+            line-height: normal;
+        }
+}
+
+content {
+    font-size: 35px;
+    font-family: 'Old Standard TT', serif;
+    @include mobile {
+            font-size: 20px;
+        }
+}
