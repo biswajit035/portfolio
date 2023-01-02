@@ -3,12 +3,11 @@ import Left from './Left'
 import Right from './Right'
 import '../../Style/css/header.css'
 
-const Header = () => {
+const Header = (props) => {
   return (
     <div className='header'>
-      {/* <div className="example"></div> */}
-        <Left/>
-        <Right/>
+        <Left darkTheme={props.darkTheme}/>
+        <Right darkTheme={props.darkTheme}/>
     </div>
   )
 }

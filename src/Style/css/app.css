@@ -1,0 +1,19 @@
+.dark {
+  background-color: black;
+  color: white;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.container {
+  position: fixed;
+}
+
+.App {
+  position: relative;
+  overflow-x: hidden;
+}/*# sourceMappingURL=app.css.map */

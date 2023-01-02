@@ -1,7 +1,7 @@
-@import './abstracts/variable';
-@import './components//button';
-@import './themes/typography';
-@import './abstracts/mixin';
+@import '../abstracts/variable';
+@import '../components/button';
+@import '../themes/typography';
+@import '../abstracts/mixin';
 
 
 
@@ -19,6 +19,7 @@
 }
 
 .header_left {
+    z-index: 1;
     overflow: hidden;
     padding-left: 4vw;
     padding-right: 4vw;
@@ -47,11 +48,14 @@
     }
     &-btn{
         @extend button;
-        
+    }
+    &-btn-dark{
+        @extend button-dark;
     }
 }
 
 .header_right {
+    z-index: 1;
     // background-color: $accent-color;
     display: flex;
     min-width: 40vw;
@@ -64,22 +68,7 @@
     }
 }
 
-.example {
-    position: absolute;
-    background-color: rgba(232, 78, 54,0.5);
-        top: -38vh;
-            right: 50vh;
-            width: 200px;
-            height: 169vh;
-    rotate: 45deg;
-    
-    @include mobile {
-            top: -16vh;
-                right: 23vh;
-                width: 110px;
-                height: 107vh;
-    }
-}
+
 
 // .right_pic {
 //     width: 290px;
@@ -95,8 +84,8 @@
 .profilePic_holder{
     position: relative;
     // margin: auto;
-    width: 55vw;
-    height: 55vw;
+    width: 50vw;
+    height: 50vw;
     border-radius: 50%;
     background-image: url("../../Components/Header/new_header_image.png");
     background-origin: border-box;

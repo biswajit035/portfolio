@@ -21,3 +21,8 @@ button{
         font-weight: 600;
     }
 }
+
+button-dark{
+    @extend button;
+    border-color: white;
+}
