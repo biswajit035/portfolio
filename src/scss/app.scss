@@ -1,15 +1,19 @@
-@import './themes/darkmode';
+@import './themes/darkTheme';
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
 .container{
-    // background-color: red;
     position: fixed;
-    // top: 0;
 }
-.App {
+.app {
+    position: relative;
+    overflow-x: hidden;
+}
+.app-dark {
+    background-color: black;
+    color: white;
     position: relative;
     overflow-x: hidden;
 }

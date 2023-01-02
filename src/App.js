@@ -14,7 +14,7 @@ function App() {
   }
 
   return (
-    <div className={`App ${darkTheme? "dark" : ""}`}>
+    <div className={`app${darkTheme? "-dark" : ""}`}>
       <Darkmode darkTheme={darkTheme} onChange={handleChange}/>
       <div className="back_line"></div>
       <Navbar darkTheme={darkTheme} />

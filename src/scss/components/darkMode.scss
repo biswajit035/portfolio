@@ -1,3 +1,6 @@
+@import '../abstracts/mixin';
+@import '../abstracts/variable';
+
 * {
     box-sizing: border-box;
     margin: 0px;
@@ -6,6 +9,9 @@
 
 span {
     font-size: 40px;
+    @include mobile{
+        font-size: 15px;
+    }
 }
 
 .dark-mode {
@@ -24,12 +30,17 @@ span {
 
 .container {
     z-index: 2;
-        padding-top: 30px;
-            padding-left: 100px;
-            width: fit-content;
-            position: absolute;
-            display: flex;
-            align-items: center;
+    padding-top: 30px;
+    padding-left: 100px;
+    width: fit-content;
+    position: absolute;
+    display: flex;
+    align-items: center;
+
+    @include mobile {
+        padding-top: 10px;
+        padding-left: 15px;
+    }
 }
 
 .switch {
