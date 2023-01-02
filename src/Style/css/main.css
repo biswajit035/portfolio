@@ -149,11 +149,6 @@ input:checked + .slider:before {
   padding: 10px;
 }
 
-.app-dark {
-  background-color: black;
-  color: white;
-}
-
 * {
   margin: 0;
   padding: 0;
@@ -165,6 +160,13 @@ input:checked + .slider:before {
 }
 
 .app {
+  position: relative;
+  overflow-x: hidden;
+}
+
+.app-dark {
+  background-color: black;
+  color: white;
   position: relative;
   overflow-x: hidden;
 }
