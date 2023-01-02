@@ -1,8 +1,10 @@
-@import './components/button';
-@import './abstracts/variable';
-@import './abstracts/mixin';
+@import '../components/button';
+@import '../abstracts/variable';
+@import '../abstracts/mixin';
 
 .navbar {
+    position: relative;
+    z-index: 1;
     min-height: 64px;
     font-size: 30px;
     font-weight: 600;
@@ -15,7 +17,10 @@
     &-btn {
         @extend button;
     }
-
+    &-btn-dark {
+        @extend button-dark;
+    }
+    
     &-link {
         cursor: pointer;
 

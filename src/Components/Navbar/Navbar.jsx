@@ -1,13 +1,12 @@
 import React from 'react'
-import '../../Style/css/navbar.css'
 
-const Navbar = () => {
+const Navbar = (props) => {
   return (
     <div className='navbar'>
         <span className='navbar-link'>About</span>
         <span className='navbar-link'>Services</span>
         <span className='navbar-link'>Work</span>
-        <div className="navbar-btn">Download CV</div>
+        <div className={`navbar-btn${props.darkTheme ? "-dark" : ""}`}>Download CV</div>
     </div>
   )
 }
