@@ -1,4 +1,4 @@
-.dark {
+.app-dark {
   background-color: black;
   color: white;
 }
@@ -13,7 +13,7 @@
   position: fixed;
 }
 
-.App {
+.app {
   position: relative;
   overflow-x: hidden;
 }/*# sourceMappingURL=app.css.map */
